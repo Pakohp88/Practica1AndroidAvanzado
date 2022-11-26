@@ -16,6 +16,11 @@
                     android:id="@+id/nestedscrollview"
                     android:icon="@drawable/ic_baseline_description_24"
                     android:title="@string/nestedscrollview" />
+                <item
+                    android:id="@+id/collapsing"
+                    android:icon="@drawable/ic_baseline_description_24"
+                    android:title="@string/collapsingtoolbarlayout" />
+
 
             </menu>
         </item>

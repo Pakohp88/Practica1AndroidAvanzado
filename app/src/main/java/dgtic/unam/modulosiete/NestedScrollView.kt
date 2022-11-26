@@ -32,7 +32,6 @@ class NestedScrollView : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
-        onBackPressed()
         return true
     }
 

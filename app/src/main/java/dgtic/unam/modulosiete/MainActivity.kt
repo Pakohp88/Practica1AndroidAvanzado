@@ -12,7 +12,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener { private lateinit var drawer: DrawerLayout
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+    private lateinit var drawer: DrawerLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -40,7 +42,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.contraint_layout->{ startActivity(Intent(this,ConstraintActivity::class.java))
+            R.id.contraint_layout->{
+                startActivity(Intent(this,ConstraintActivity::class.java))
+            }
+            R.id.nestedscrollview->{
+                startActivity(Intent(this,NestedScrollView::class.java))
+            }
+            R.id.collapsing->{
+                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
             }
         }
         drawer.closeDrawer(GravityCompat.START)

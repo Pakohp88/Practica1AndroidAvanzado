@@ -50,14 +50,17 @@ class MaterialAdapter(private val context: Context, private val listaTarjetas: A
         }
     }
 
-    override fun getItemCount(): Int { return if (listaTarjetas.isEmpty()) {
-        0
-    } else {
-        listaTarjetas.size
-    }
+    override fun getItemCount(): Int {
+        return if (listaTarjetas.isEmpty()) {
+            0
+        }
+        else {
+            listaTarjetas.size
+        }
     }
 
-    override fun getItemId(position: Int): Long { return listaTarjetas[position].id
+    override fun getItemId(position: Int): Long {
+        return listaTarjetas[position].id
     }
 
     override fun onViewAttachedToWindow(holder: ViewHolder) {
@@ -65,7 +68,8 @@ class MaterialAdapter(private val context: Context, private val listaTarjetas: A
         animateCircularReveal(holder.itemView)
     }
 
-    private fun animateCircularReveal(view: View) { val centroX = 0
+    private fun animateCircularReveal(view: View) {
+        val centroX = 0
         val centerY = 0
         val inicioRadius = 0.0f
         val finRadius = kotlin.math.max(view.width, view.height)

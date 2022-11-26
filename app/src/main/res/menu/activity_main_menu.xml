@@ -12,6 +12,11 @@
                     android:id="@+id/contraint_layout"
                     android:icon="@drawable/ic_baseline_description_24"
                     android:title="@string/constraint_layout" />
+                <item
+                    android:id="@+id/nestedscrollview"
+                    android:icon="@drawable/ic_baseline_description_24"
+                    android:title="@string/nestedscrollview" />
+
             </menu>
         </item>
     </group>

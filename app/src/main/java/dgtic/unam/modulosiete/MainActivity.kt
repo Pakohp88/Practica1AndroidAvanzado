@@ -1,5 +1,6 @@
 package dgtic.unam.modulosiete
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.contraint_layout->{ startActivity(Intent(this,ConstraintActivity::class.java))
+            }
+        }
         drawer.closeDrawer(GravityCompat.START)
         return true
     }

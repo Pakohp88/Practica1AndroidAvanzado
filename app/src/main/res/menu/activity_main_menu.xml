@@ -24,5 +24,21 @@
 
             </menu>
         </item>
+
+        <item
+            android:id="@+id/subititulo_dos"
+            android:title="@string/audioVideo">
+            <menu>
+                <item
+                    android:id="@+id/audio"
+                    android:icon="@drawable/ic_baseline_description_24"
+                    android:title="@string/menuAudio"/>
+                <item
+                    android:id="@+id/video"
+                    android:icon="@drawable/ic_baseline_description_24"
+                    android:title="@string/menuVideo"/>
+            </menu>
+        </item>
+
     </group>
 </menu>

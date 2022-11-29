@@ -51,6 +51,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.collapsing->{
                 startActivity(Intent(this,CollapsingToolbarLayout::class.java))
             }
+            R.id.audio->{
+                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
+            }
+            R.id.video->{
+                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true

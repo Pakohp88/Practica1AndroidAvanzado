@@ -70,5 +70,7 @@
     <string name="serie_x">Serie X</string>
     <string name="logo_compra">logo compra</string>
     <string name="collapsingtoolbarlayout">Collapsingtoolbarlayout</string>
-
+    <string name="menuAudio">Audio</string>
+    <string name="menuVideo">Video</string>
+    <string name="audioVideo">Audio y Video</string>
 </resources>

@@ -10,15 +10,15 @@
             <menu>
                 <item
                     android:id="@+id/contraint_layout"
-                    android:icon="@drawable/ic_baseline_description_24"
+                    android:icon="@drawable/ic_baseline_details_24"
                     android:title="@string/constraint_layout" />
                 <item
                     android:id="@+id/nestedscrollview"
-                    android:icon="@drawable/ic_baseline_description_24"
+                    android:icon="@drawable/ic_baseline_book_24"
                     android:title="@string/nestedscrollview" />
                 <item
                     android:id="@+id/collapsing"
-                    android:icon="@drawable/ic_baseline_description_24"
+                    android:icon="@drawable/ic_baseline_videogame_asset_24"
                     android:title="@string/collapsingtoolbarlayout" />
 
 
@@ -31,11 +31,11 @@
             <menu>
                 <item
                     android:id="@+id/audio"
-                    android:icon="@drawable/ic_baseline_description_24"
+                    android:icon="@drawable/ic_baseline_surround_sound_24"
                     android:title="@string/menuAudio"/>
                 <item
                     android:id="@+id/video"
-                    android:icon="@drawable/ic_baseline_description_24"
+                    android:icon="@drawable/ic_baseline_ondemand_video_24"
                     android:title="@string/menuVideo"/>
             </menu>
         </item>

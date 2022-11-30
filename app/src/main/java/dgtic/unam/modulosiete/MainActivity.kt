@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(Intent(this,CollapsingToolbarLayout::class.java))
             }
             R.id.audio->{
-                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
+                startActivity(Intent(this,Sonido::class.java))
             }
             R.id.video->{
                 startActivity(Intent(this,Video::class.java))

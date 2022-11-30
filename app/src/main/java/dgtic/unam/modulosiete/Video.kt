@@ -13,10 +13,12 @@ import dgtic.unam.modulosiete.databinding.ActivityVideoBinding
 class Video : AppCompatActivity() {
     private lateinit var binding: ActivityVideoBinding
     private lateinit var model: ArrayList<ModeloVideo>
-    private lateinit var adap: RecipeAdapter
+    private lateinit var adap: RecipeAdapterVideo
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
         binding = ActivityVideoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val controller = MediaController(this)
@@ -53,8 +55,13 @@ class Video : AppCompatActivity() {
                 2
             )
         )
-        adap = RecipeAdapter(this, model)
+        adap = RecipeAdapterVideo(this, model)
         binding.list.adapter = adap
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 }

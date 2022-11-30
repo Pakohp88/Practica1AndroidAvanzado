@@ -25,4 +25,9 @@ class RVExample : AppCompatActivity() {
         val adapter= AdapaterViewHolder(this, Source.dataList)
         recyclerView.adapter=adapter
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

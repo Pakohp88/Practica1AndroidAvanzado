@@ -37,6 +37,10 @@
                     android:id="@+id/video"
                     android:icon="@drawable/ic_baseline_ondemand_video_24"
                     android:title="@string/menuVideo"/>
+                <item
+                    android:id="@+id/rv"
+                    android:icon="@drawable/ic_baseline_table_rows_24"
+                    android:title="@string/recycler"/>
             </menu>
         </item>
 

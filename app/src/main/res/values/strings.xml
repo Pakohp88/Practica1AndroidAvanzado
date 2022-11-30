@@ -73,4 +73,5 @@
     <string name="menuAudio">Audio</string>
     <string name="menuVideo">Video</string>
     <string name="audioVideo">Audio y Video</string>
+    <string name="imagen_pelicula">Imagen Pelicula</string>
 </resources>

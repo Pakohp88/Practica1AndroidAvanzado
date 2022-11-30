@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(Intent(this,CollapsingToolbarLayout::class.java))
             }
             R.id.video->{
-                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
+                startActivity(Intent(this,Video::class.java))
             }
         }
         drawer.closeDrawer(GravityCompat.START)
